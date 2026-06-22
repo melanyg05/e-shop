@@ -7,12 +7,12 @@ def admin():
 
 @admin_bp.route('/admin/productos')
 def productos():
-    return render_template('/admin/productos.html')
+    return render_template('admin/productos.html')
 
 @admin_bp.route('/admin/clientes')
 def clientes():
-    return render_template('/admin/clientes.html')
+    return render_template('admin/clientes.html')
 
 @admin_bp.route('/admin/pedidos')
 def pedidos():
-    return render_template('/admin/pedidos.html')
+    return render_template('admin/pedidos.html')

@@ -7,7 +7,7 @@ def home():
 
 @public_bp.route('/tienda')
 def tienda():
-    return render_template('/public/tienda.html')
+    return render_template('public/tienda.html')
 
 @public_bp.route('/contacto')
 def contacto():

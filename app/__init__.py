@@ -9,11 +9,11 @@ migrate = Migrate()
 def create_app():
     app = Flask(__name__)
     app.config.from_object(Config)
-
+    
     db.init_app(app)
-    migrate.init_app(app,db)
+    migrate.init_app(app, db)
 
-    #Blueprints
+    # Blueprints
     from app.blueprints.public import public_bp
     from app.blueprints.auth import auth_bp
     from app.blueprints.admin import admin_bp
