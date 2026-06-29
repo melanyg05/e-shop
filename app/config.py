@@ -11,3 +11,5 @@ class Config:
         f"@{os.getenv('DB_HOST')}/{os.getenv('DB_NAME')}"
     )
     SQLALCHEMY_TRACK_MODIFICATIONS = False
+
+    
