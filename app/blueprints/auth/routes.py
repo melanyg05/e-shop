@@ -42,7 +42,7 @@ def login():
 
     if form.validate_on_submit():
         usuario = Usuario.query.filter_by(email=form.email.data).first()
-
+        print("Passwor: ", form.password.data)
         if usuario and usuario.check_password(form.password.data):
             login_user(usuario, remember=form.remember.data)
             flash(f'Bienvenido, {usuario.nombre}!', 'success')
